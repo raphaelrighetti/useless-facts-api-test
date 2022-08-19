@@ -1,0 +1,33 @@
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#body.light {
+  background-color: #6e71cf;
+}
+
+#body.dark {
+  background-color: ;
+}
+
+.main-btn {
+  position: absolute;
+  top: calc(50vh - 21px / 2);
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: .50rem .75rem;
+}
+
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.main-btn.light {
+  background-color: #d892db;
+  border: solid 1px #1b270e;
+  box-shadow: 2px 2px 0px #bf4ac3, 4px 4px 0px #ab42af;
+}
