@@ -1,17 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen:wght@400;700&display=swap');
+
 #body {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
-}
-
-#body.light {
   background-color: #6e71cf;
+  font-family: 'Silkscreen', cursive;
 }
 
-#body.dark {
-  background-color: ;
+.phrase-field {
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 70vw;
+  height: 25vh;
+  padding: 2rem 2.5rem;
+  background-color: #c5c6eb;
+  border: solid 5px #999bdd;
+}
+
+.phrase-p {
+  line-height: normal;
+  text-align: center
 }
 
 .main-btn {
@@ -20,14 +34,29 @@
   cursor: pointer;
   border-radius: 1rem;
   padding: .50rem .75rem;
+  background-color: #d892db;
+  border: solid 1px #21213e;
+  box-shadow: 2px 2px 0px #bf4ac3, 4px 4px 0px #ab42af;
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 700;
 }
 
 .main-btn:hover {
   transform: scale(1.05);
 }
 
-.main-btn.light {
-  background-color: #d892db;
-  border: solid 1px #1b270e;
-  box-shadow: 2px 2px 0px #bf4ac3, 4px 4px 0px #ab42af;
+.crystal-ball-field {
+  position: absolute;
+  bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+}
+
+.crystal-ball {
+  object-fit: contain;
+  width: 75%;
+  height: 100%;
 }
