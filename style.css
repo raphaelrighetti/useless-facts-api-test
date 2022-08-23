@@ -9,16 +9,24 @@
   font-family: 'Silkscreen', cursive;
 }
 
-.phrase-field {
+.phrase-div {
   position: absolute;
   top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   width: 70vw;
   height: 25vh;
-  padding: 2rem 2.5rem;
+}
+
+.phrase-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 70vw;
+  height: fit-content;
+  padding: 2rem 2rem;
   background-color: #c5c6eb;
   border: solid 5px #999bdd;
 }
@@ -59,4 +67,34 @@
   object-fit: contain;
   width: 75%;
   height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .phrase-field {
+    font-size: .55rem;
+  }
+
+  .main-btn:hover {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .phrase-field {
+    font-size: .75rem;
+  }
+
+  .main-btn:hover {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .phrase-field {
+    font-size: 1rem;
+  }
+
+  .main-btn:hover {
+    transform: scale(1);
+  }
 }
